@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "fastDownload",
+    "description": "esaly download videos",
+    "version": "1.0",
+
+    "icons": {
+        "128": "img/icon.png",
+        "48": "img/icon.png",
+        "16": "img/icon.png"
+    },
+
+    "browser_action": {
+        "default title": "fastDownload",
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.pexels.com/*", "http://www.pexels.com/*"],
+            "js": ["js/content.js", "js/jquery-3.6.0.min.js"]
+        }
+    ],
+
+    "background" : {
+        "scripts":["js/background.js","js/jquery-3.6.0.min.js"],
+        "persistent":false
+    },
+
+    "permissions": [
+        "downloads",
+        "tabs",
+        "storage"
+    ]
+}

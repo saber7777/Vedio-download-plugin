@@ -1,0 +1,29 @@
+body {
+    width: 600px;
+    background-color: lightgrey;
+}
+
+#downloadBtn {
+    background-color: steelblue;
+    color: white;
+    font-size: 20px;
+    border-radius:20px;
+    border: none;
+}
+
+#selectAllBtn {
+    background-color: steelblue;
+    color: white;
+    font-size: 20px;
+    border-radius:20px;
+    border: none;
+}
+
+p {
+    font-size: 16px;
+    background-color: lightsteelblue;
+    border-radius:10px;
+    border-width:10px;
+    border: lightsteelblue;
+    margin: 10px;
+}
